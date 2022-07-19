@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+  min-height: 100vh;
+  text-align: left;
+  background: white;
+  font-family:  'Oswald', sans-serif;
+}
+
+main {
+  margin: auto 10px;
+}
+/*--TOP--*/
+
+header {
+  max-width: 100%;
+  background-color: darkslategray;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  padding: 15px 0;
+  font-size: 1.6em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+#top {
+  text-align: center;
+  margin-top: 2.5vh;
+  padding-bottom: 30px;
+  border-bottom: 7.5px double black;
+
+}
+
+
+/*--MIDDLE --*/
+h3 {
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+#contact-information {
+  border-bottom: 2.5px solid black;
+}
+
+input,
+textarea,
+button,
+#State {
+  margin: 7.5px auto;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  height: 3em;
+  background-color: rgb(235, 235, 235);
+  border:none;
+  border-radius: 2.5px;
+  padding: 16px 20px;
+  font-family: sans-serif, serif;
+}
+
+#State {
+  width: 100%;
+  height: 3em;
+  background-color: rgb(235, 235, 235);
+  border:none;
+  border-radius: 2.5px;
+  font-family:'Oswald', sans-serif;
+  font-size: 0.95em;
+}
+
+#State:empty {
+  display: none;
+}
+label {
+  font-size: 1.1em;
+}
+
+input::placeholder {
+  text-align: right;
+  font-style: italic;
+}
+
+#zip {
+  width:50%
+}
+
+input:active {
+  border: auto;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+button {
+  width: 100%;
+  height: 3.25rem;
+  background-color: darkcyan;
+  border:none;
+  border-radius: 2.5px;
+  font-size: 1.25em;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+
+
+
+.options {
+  margin:10px 0 20px;
+}
+textarea {
+  height: 6em;
+}
+
+fieldset {
+  margin-top:15px;
+  padding-bottom: 25px;
+  border:none;
+}
+
+/*-- BOTTOM --*/
+
+footer {
+  text-align: center;
+  margin-bottom: 25vh;
+}
+
+
+
+@media screen and (min-width:768px) {
+
+  main {
+    display: inline-block;
+    width: 50vw;
+    margin: 0 25vw;
+  }
+  div #contact-information br {
+    display: none;
+  }
+
+  .info {
+    display: flex;
+  }
+
+  label {
+    flex-grow: 1;
+    align-self: center;
+  }
+  input[type= "text"],
+  input[type= "email"],
+  #State {
+    width: 75%;
+  }
+
+  #zip {
+    display: flex;
+    width:25%;
+    margin-right: 50%;
+  }
+
+
+}
