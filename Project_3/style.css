@@ -97,7 +97,7 @@ input::placeholder {
 }
 
 input:active {
-  border: auto;
+  width:auto;
 }
 
 input[type="checkbox"],
